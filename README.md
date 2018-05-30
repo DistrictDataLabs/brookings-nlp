@@ -52,6 +52,7 @@ We will be using several natural language processing libraries throughout the co
 ```
 $ python -m nltk.downloader all
 $ python -m spacy download en
+$ python download.py
 ```
 
 Once the libraries and data are installed, you can run the notebook as follows:

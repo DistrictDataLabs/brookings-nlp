@@ -17,6 +17,7 @@ yellowbrick>=0.7
 # Utilities
 python-dateutil>=2.7.3
 pytz>=2018.4
+requests>=2.18.4
 six>=1.11.0
 tabulate>=0.8.2
 tqdm>=4.23.4
@@ -74,7 +75,6 @@ tqdm>=4.23.4
 #pyzmq==17.0.0
 #qtconsole==4.3.1
 #regex==2017.4.5
-#requests==2.18.4
 #s3transfer==0.1.13
 #Send2Trash==1.5.0
 #simplegeneric==0.8.1
