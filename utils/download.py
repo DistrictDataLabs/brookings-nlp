@@ -8,7 +8,7 @@ import tempfile
 import argparse
 import requests
 
-BASE = os.path.dirname(__file__)
+BASE = os.path.join(os.path.dirname(__file__), "..")
 CORPUS = os.path.join(BASE, "data", "corpus")
 DATASET = "http://bit.ly/2rtKEYh"
 
