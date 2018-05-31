@@ -1,6 +1,8 @@
 # Text Analytics Packages
+beautifulsoup4>=4.6.0
 gensim>=3.4.0
 nltk>=3.3
+readability-lxml>=0.7
 spacy>=2.0.11
 textblob>=0.15.1
 
@@ -15,6 +17,8 @@ scipy>=1.1.0
 yellowbrick>=0.7
 
 # Utilities
+en-core-web-sm>=2.0.0
+lxml>=4.2.1
 python-dateutil>=2.7.3
 pytz>=2018.4
 requests>=2.18.4
@@ -32,6 +36,7 @@ tqdm>=4.23.4
 #bz2file==0.98
 #certifi==2018.4.16
 #chardet==3.0.4
+#cssselect==1.0.3
 #cycler==0.10.0
 #cymem==1.31.2
 #cytoolz==0.8.2
@@ -51,7 +56,12 @@ tqdm>=4.23.4
 #jsonschema==2.6.0
 #jupyter-client==5.2.3
 #jupyter-console==5.2.0
+#jupyter-contrib-core==0.3.3
+#jupyter-contrib-nbextensions==0.5.0
 #jupyter-core==4.4.0
+#jupyter-highlight-selected-word==0.2.0
+#jupyter-latex-envs==1.4.4
+#jupyter-nbextensions-configurator==0.4.0
 #kiwisolver==1.0.1
 #MarkupSafe==1.0
 #mistune==0.8.3
@@ -72,6 +82,7 @@ tqdm>=4.23.4
 #ptyprocess==0.5.2
 #Pygments==2.2.0
 #pyparsing==2.2.0
+#PyYAML==3.12
 #pyzmq==17.0.0
 #qtconsole==4.3.1
 #regex==2017.4.5
