@@ -14,7 +14,7 @@ DATA = os.path.join(os.path.dirname(__file__), "..", "data", "wapo")
 def fetch_wapo(sid):
     url = WAPO_URL + sid 
     res = requests.get(url)
-    return res.text 
+    return res.text.encode('utf-8')
 
 
 def save_wapo(sid, category="politics"):
@@ -23,7 +23,7 @@ def save_wapo(sid, category="politics"):
         os.makedirs(dpath)
     
     path = os.path.join(dpath, sid + ".html")
-    with open(path, 'w') as f:
+    with open(path, 'wb') as f:
         f.write(fetch_wapo(sid)) 
 
 
@@ -34,8 +34,8 @@ def load_wapo(sid, category="*", extract=True):
     if len(paths) == 0:
         raise ValueError("could not find {} in {}".format(sid, category))
 
-    with open(paths[0], 'r') as f:
-        data = f.read()
+    with open(paths[0], 'rb') as f:
+        data = f.read().decode('utf-8')
 
     if extract:
         return extract_html_text(data)
